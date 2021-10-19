@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	#robert{
+	width:490px;
+	height:200px;
+	background-image: url(download-2.jpg);
+	background-size: cover;
+	animation-name: fly;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	position: absolute;
+}
+
+@keyframes fly{
+	0%{
+		transform: rotate(0deg);
+		top: 100px;
+		left: 5px;
+	}
+
+	25%{
+		transform: rotate(10deg);
+		top: 150px;
+		left: 210px;
+	}
+
+	50%{
+		transform: rotate(25deg);
+		top: 225px;
+		left: 515px;
+	}
+
+	75%{
+		transform: rotate(10deg);
+		top: 150px;
+		left: 720px;
+	}
+
+	100%{
+		transform: rotate(0deg);
+		top: 100px;
+		left: 925px;
+	}
+}
+
+</style>
+</head>
+<body>
+<div id="robert"></div>
+</body>
+</html>
