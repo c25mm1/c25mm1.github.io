@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#gallery {
+		width: 500px;
+		height: 1000px;
+		background-size:contain;
+		background-repeat:no-repeat;
+		background-image:url(Frame.jpg);
+		}
+	</style>
+
+</head>
+<body>
+	<div id = "gallery"></div>
+<script type="text/javascript">
+
+var list = ["url(Painting1.jpg)", "url(Painting2.jpg)", "url(Painting3.jpg)", "url(Painting4.jpg)", "url(Painting5.jpg)", "url(painting6.jpg)", "url(Painting8.jpg)"]
+
+
+
+
+var painting = document.getElementById("gallery");
+
+
+painting.addEventListener("click",function changepicture () {
+var number = Math.round(Math.random()*6);
+gallery.style.backgroundImage=list[number];})
+
+</script>
+</body>
+</html>
