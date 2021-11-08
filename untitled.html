@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		function makex () {
+		
+		var x = document.createElement ("div") ;
+		document.body.appendChild(x);
+		x.style.width = "150px" ;
+		x.style.height = "150px" ;
+		x.style.backgroundImage = "url(Unknown.png)" ;
+		x.style.backgroundSize = "cover" ;
+		x.style.position = "relative" ;
+		x.style.display = "inline-block" ;
+
+	}
+
+		makex () ;
+
+		setInterval(makex,300);
+
+	</script>
+
+</body>
+</html>
