@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#thankyou {
+		width: 500px;
+		height: 1000px;
+		background-size:contain;
+		background-repeat:no-repeat;
+		background-image:url(thankful.jpg);
+		}
+	</style>
+
+</head>
+<body>
+	<div id = "thankyou"></div>
+<script type="text/javascript">
+
+var list = ["url(pumpkin.jpg)","url(turkey.png)"]
+
+
+
+
+var click = document.getElementById("thankyou");
+
+
+click.addEventListener("click",function changepicture () {
+var number = Math.floor(Math.random()*2);
+thankyou.style.backgroundImage=list[number];})
+
+</script>
+</body>
+</html>

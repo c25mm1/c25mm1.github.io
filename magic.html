@@ -6,11 +6,14 @@
 <body>
 <script type="text/javascript">
 
+	function makeHat () {
+
 	var hat = document.createElement('div')
 	document.body.appendChild(hat);
 	hat.style.height = "190px";
 	hat.style.backgroundImage = "url(tophat.png)";
-	hat.addEventListener("click", function makeHat () {
+	hat.style.display = "inline-block"
+	hat.addEventListener("click", function(){
 	hat.style.backgroundImage = "url(rabbit.jpg)";
 	})
 

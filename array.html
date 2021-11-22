@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#minesweeper {
+		width: 500px;
+		height: 1000px;
+		background-size:contain;
+		background-repeat:no-repeat;
+		background-image:url(images.png);
+		}
+	</style>
+
+</head>
+<body>
+	<div id = "minesweeper"></div>
+<script type="text/javascript">
+
+var list = ["url(1.png)", "url(1.png)", "url(1.png)", "url(1.png)", "url(1.png)", "url(1.png)", "url(1.png)", "url(1.png)", "url(1.png)", "url(1.png)", "url(1.png)", "url(1.png)", "url(1.png)", "url(1.png)", "url(1.png)", "url(2.png)", "url(2.png)", "url(2.png)", "url(2.png)", "url(2.png)", "url(2.png)", "url(2.png)", "url(2.png)", "url(2.png)", "url(2.png)", "url(3.png)", "url(3.png)", "url(3.png)", "url(3.png)", "url(3.png)", "url(4.png)", "url(4.png)", "url(4.png)","url(4.png)", "url(5.png)", "url(5.png)", "url(6.png)", "url(7.png)", "url(8.png)", "url(Mine.png)", "url(Mine.png)", "url(Mine.png)", "url(Mine.png)", "url(Mine.png)", "url(images.png)", "url(images.png)", "url(images.png)", "url(images.png)", "url(images.png)", "url(images.png)", "url(images.png)", "url(images.png)", "url(images.png)"]
+
+
+
+
+var click = document.getElementById("minesweeper");
+
+
+click.addEventListener("click",function changepicture () {
+var number = Math.round(Math.random()*54);
+minesweeper.style.backgroundImage=list[number];})
+
+</script>
+</body>
+</html>
