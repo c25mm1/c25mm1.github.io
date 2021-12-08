@@ -3,45 +3,78 @@
 <head>
 	<style type="text/css">
 		#present {
-		width: 500px;
-		height: 1000px;
+		width: 50px;
+		height: 100px;
 		background-size:contain;
 		background-repeat:no-repeat;
-		background-image:url(thankful.jpg);
+		background-image:url(candle.png);
 		animation-name: fly;
-		animation-duration: 5s;
+		animation-duration: 4s;
 		animation-iteration-count: infinite;
 		position: absolute;
-	}
+		z-index: 1;
+		}
+		#menorah {
+		width:212px;
+		height:250px;
+		background-image:url(menorah.png);
+		right:620px;
+		top:230px;
+		position:absolute;
+		}
 @keyframes fly{
 	0%{
 		transform: rotate(0deg);
-		top: 100px;
-		left: 5px;
+		top: 243px;
+		left: 34px;
 	}
 
-	25%{
-		transform: rotate(10deg);
-		top: 150px;
-		left: 210px;
+	10%{
+		transform: rotate(0deg);
+		top: 432px;
+		left: 407px;
+	}
+
+	20%{
+		transform: rotate(0deg);
+		top: 2px;
+		left: 743px;
+	}
+
+	30%{
+		transform: rotate(0deg);
+		top: 37px;
+		left: 203px;
+	}
+
+	40%{
+		transform: rotate(0deg);
+		top: 428px;
+		left: 29px;
 	}
 
 	50%{
-		transform: rotate(25deg);
-		top: 225px;
-		left: 515px;
+		transform: rotate(0deg);
+		top: 13px;
+		left: 125px;
 	}
 
-	75%{
-		transform: rotate(10deg);
-		top: 150px;
-		left: 720px;
+	60%{
+		transform: rotate(0deg);
+		top: 23px;
+		left: 328px;
+	}
+
+	70%{
+		transform: rotate(0deg);
+		top: 479px;
+		left: 209px;
 	}
 
 	100%{
 		transform: rotate(0deg);
-		top: 100px;
-		left: 925px;
+		top: 220px;
+		left: 690px;
 	}
 }
 
@@ -49,5 +82,8 @@
 </head>
 <body>
 <div id="present"></div>
+<div id="menorah"></div>
+<script type="text/javascript">
+var number = Math.round(Math.random()*450);
 </body>
 </html>
