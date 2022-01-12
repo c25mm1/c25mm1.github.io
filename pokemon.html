@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<center>The most popular pokemon according to a survey! (every 1 pokemon = 1000 pokemon)</center>
+
+	<script type="text/javascript">
+		
+		function makePokemon (x){
+			var d = document.createElement("div");
+			document.body.appendChild(d);
+			d.style.width = "50px";
+			d.style.height="50px";
+			d.style.backgroundColor="gold";
+			d.style.backgroundSize="contain";
+			d.style.display="inline-block";
+			// d.style.backgroundColor="blue";
+			d.style.margin="3px";
+			d.innerText = x;
+			d.style.color="black";
+
+
+
+		}
+
+		for(var i=1; i<69; i=i+1){
+			makePokemon(i)
+		}
+	</script>
+
+</body>
+</html>
