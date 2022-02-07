@@ -9,13 +9,15 @@
 
 	<script type="text/javascript">
 		
-		function makePokemon (x){
+		function makePokemon (x) {
 			var d = document.createElement("div");
 			document.body.appendChild(d);
 			d.style.width = "50px";
 			d.style.height="50px";
-			d.style.backgroundColor="gold";
+			d.style.backgroundImage="url(d.png)";
 			d.style.backgroundSize="contain";
+			d.innerText = x;
+			d.classList.add("div");
 			d.style.display="inline-block";
 			// d.style.backgroundColor="blue";
 			d.style.margin="3px";

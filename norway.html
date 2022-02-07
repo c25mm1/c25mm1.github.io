@@ -1,53 +1,105 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-
+<meta charset="utf-8">
 	<style type="text/css">
 		
-		/*#norway{
-			width:500px;
-			height:500px;
-			background-image:url(https://vemaps.com/uploads/img/big/no-01.jpg);
+		#norway{
+			width:200px;
+			height:145px;
+			background-image:url(flag_of_norway.svg.png);
 			background-size:cover;
-			background-position: center;*/
+
+		}
+
+			#usa{
+			width:200px;
+			height:145px;
+			margin-top:15px;
+			background-image:url(usa.png);
+			background-size:cover;
+
+		}
+
+
+			#germany{
+			width:200px;
+			height:145px;
+			margin-top:15px;
+			background-image:url(germany.png);
+			background-size:cover;
+
 		}
 	</style>
 </head>
 <body>
-	<!-- <div id='norway'></div> -->
+<center>The # of Gold/Silver/Bronze Medals Scored by Each Country in the Winter Olympics</center>
+	<div id="norway"></div>
+	<div id="usa"></div>
+	<div id="germany"></div>
 
 <script type="text/javascript">
 		
-		function makeGoldMedals (x){
+		function makeGold (x) {
 			var norway = document.createElement("div");
-			norway.body.appendChild(norway);
-			norway.style.width = "50px";
-			norway.style.height="50px";
+			document.getElementById('norway').appendChild(norway);
+			norway.style.width= "5px";
+			norway.style.height="5px";
 			norway.style.backgroundColor="gold";
-			norway.style.backgroundSize="contain";
+			norway.style.backgroundSize="inline-block";
 			norway.style.display="inline-block";
 			norway.style.margin="3px";
-			norway.innerText = x;
-			norway.style.color="black";
-
+			norway.classList.add("div");
 
 
 		}
 
-		// goldButton.addEventListener("click", function(){
 
-			for(var i=1; i<69; i=i+1){
-			makeGoldMedals(i)}
+			for(var i=1; i<133; i=i+1){
+				makeGold(i)
+			}
+
+			function makeSilver (x) {
+			var usa = document.createElement("div");
+			document.getElementById('usa').appendChild(usa);
+			usa.style.width= "5px";
+			usa.style.height="5px";
+
+			usa.style.backgroundColor="silver";
+			usa.style.backgroundSize="inline-block";
+			usa.style.display="inline-block";
+			usa.style.margin="3px";
+			usa.classList.add("div");
+
+
+		}
+
+
+			for(var i=1; i<113; i=i+1){
+				makeSilver(i)
+			}
+
+			function makeBronze (x) {
+			var germany = document.createElement("div");
+			document.getElementById('germany').appendChild(germany);
+			germany.style.width= "5px";
+			germany.style.height="5px";
+
+			germany.style.backgroundColor="peru"
+			germany.style.backgroundSize="inline-block";
+			germany.style.display="inline-block";
+			germany.style.margin="3px";
+			germany.classList.add("div");
+
+
+		}
+
+
+			for(var i=1; i<61; i=i+1){
+				makeBronze(i)
+			}
 		
 	</script>
-		
-step1: create a variable that points to the div with the ID of norway.
-
-step 2: 
-
-
-add an event listener to that div.	</script>
 
 </body>
 </html>
