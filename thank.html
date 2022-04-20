@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#gallery {
+		width: 500px;
+		height: 1000px;
+		background-size:contain;
+		background-repeat:no-repeat;
+		background-image:url(download-1.png);
+		}
+		p {
+			position:fixed;
+			top:0px;
+			left:195px;
+			z-index:2px;
+			color:white;
+		}
+	</style>
+
+</head>
+<body>
+	<div id = "gallery"></div>
+	<div id = "hallery"></div>
+	<p> I appreciate you!</p>
+	<textarea></textarea>
+<script type="text/javascript">
+
+var list = ["url(download-2.png)", "url(download-3.png)", "url(download-4.png)", "url(download-5.png)", "url(download-6.png)", "url(download-7.png)", "url(download-8.png)"]
+
+var list2 = [38, 1, 3, 44, 57, 2, 43, 98, 42, 78, 29, 5]
+
+
+var painting = document.getElementById("gallery");
+var qainting = document.getElementById("hallery");
+
+
+painting.addEventListener("click",function changepicture (x) {
+gallery.style.innerText=x
+gallery.style.height="750px";
+gallery.style.width="500px";
+gallery.style.position="contain"
+var number = Math.round(Math.random()*6);
+gallery.style.backgroundImage=list[number];})
+
+qainting.addEventListener("click",function dhangeqicture (y) {
+hallery.style.innerText=list2[number];
+var number = Math.round(Math.random()*6);
+})
+
+
+</script>
+</body>
+</html>

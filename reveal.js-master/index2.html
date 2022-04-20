@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>My Presentation
+				<h2 class="r-fit-text">By Max</h2>
+				</section>
+				<section data-transition="zoom">
+  <h2>Watch this text zoom!</h2>
+</section>
+				<section>
+    <h3>On the next slide you will see: </h3>
+    <ul >
+      <li >An image:  <img src="trees.png"  height="100" width="200">  </li>
+      <li >A website</li>
+    </ul>                 
+  </section>
+  <section>
+  <iframe data-src="https://www.hakim.se" data-preload></iframe>
+  <img src="trees.png"  height="100" width="200">
+</section>
+<section id="_images_side_by_side" hidden aria-hidden="true" class="future" style="top: 104.5px; display: block;">
+	<section id="_two_images" class="present" style="top: 0px; display: block;">
+		<h2>More Images</h2>
+		<div class="paragraph">
+		<p>Check out these images:</p>
+	</div>
+	<div class="paragraph">
+	<p>
+		<span class="image">
+		<img src="images-2.jpg" alt="images-2">
+		</span>
+<span class="image">
+<img src="download-1.png" alt="download-1">
+</span>
+</p>
+</div>
+</section>
+	</section>
+</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

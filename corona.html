@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	.w {
+	background-image:url(germany.png);
+	width:200px;
+	height:200px;
+	background-position: contain; 
+	position: absolute;
+	transition:1s;
+	background-image: url(download-9.png);	
+	}
+	.deertracking {
+
+	}
+
+</style>
+</head>
+<body>
+<script type="text/javascript">
+	// var boing = document.getElementById('sound');
+	// 	var input = document.getElementById('input');
+		// var x=0;
+
+		var deerNumber =0;
+			var score =0;
+
+
+	function createDeer() {
+		var deer = document.createElement('div');
+		document.body.appendChild(deer);
+		deer.classList.add("w");
+		// var deernumber=0;
+		// deernumber=0+1;
+ 			deerNumber = deerNumber +1;
+
+ 			console.log("deerNumber is " + deerNumber)
+
+
+function changePosition () {
+	 	deer.style.left = 1000 * Math.random() + "px";
+		deer.style.top = 1000 * Math.random() + "px"; };// this is the end of my changePosition funciton.//
+
+		changePosition()
+
+		setInterval(changePosition, 3000)
+
+
+
+
+
+
+
+		 deer.addEventListener("click", function() {
+		// x = x + 1;
+		// input.value = x;
+		deer.classList.remove("w");
+		// boing.play()
+			score = score +1;
+		console.log("score is " + score)
+		deerNumber = deerNumber -1;
+		console.log("deerNumber is "+ deerNumber)
+
+		 })
+
+
+	} // this is the end of my createDeer function
+
+
+		// setInterval(createDeer, 1000);
+
+
+	document.addEventListener("click", createDeer)
+
+
+	
+</script>
+</body>
+</html>

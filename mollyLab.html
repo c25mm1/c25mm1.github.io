@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+		
+		.deer{
+			width:100px;
+			height:100px;
+			position: relative;
+			background-color:brown;
+			display:inline-block;
+			margin:5px;
+			background-image:url(deer.png);
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		function makeDeer (){
+
+			var stag = document.createElement("div")
+			document.body.appendChild(stag)
+			stag.classList.add('deer');
+		}
+
+		setInterval(makeDeer, 1000)
+	</script>
+
+
+</body>
+</html>

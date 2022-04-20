@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<canvas id="myCanvas" width="1000" height="100" position="center"></canvas>
+	<style type="text/css">
+		
+		.cherryblossoms{
+		width:200px;
+		height:200px;
+		background-image:url(cb.jpg); 
+		background-size:contain;
+		background-position:center;
+		animation-name: move;
+		animation-duration: 12s;
+		animation-iteration-count: infinite;
+		position: absolute;
+	}
+
+	.invertedflowers{
+		width:200px;
+		height:200px;
+		background-image:url(flower.jpg); 
+		background-size:contain;
+		background-position:center;
+		animation-name: groove;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+		position: absolute;
+	}
+
+@keyframes move{
+	0%{
+		transform: rotate(0deg);
+		top: 98px;
+		left: 24px;
+	}
+
+	10%{
+		transform: rotate(10deg);
+		top: 107px;
+		left: 139px;
+	}
+
+	20%{
+		transform: rotate(25deg);
+		top: 547px;
+		left: 439px;
+	}
+
+	30%{
+		transform: rotate(10deg);
+		top: 245px;
+		left: 89px;
+	}
+
+	40%{
+		transform: rotate(0deg);
+		top: 986px;
+		left: 245px;
+	}
+
+	50%{
+		transform: rotate(0deg);
+		top: 428px;
+		left: 78px;
+	}
+
+	60%{
+		transform: rotate(0deg);
+		top: 103px;
+		left: 874px;
+	}
+
+	70%{
+		transform: rotate(0deg);
+		top: 428px;
+		left: 789px;
+	}
+
+	80%{
+		transform: rotate(0deg);
+		top: 247px;
+		left: 456px;
+	}
+
+	80%{
+		transform: rotate(0deg);
+		top: 435px;
+		left: 678px;
+	}
+
+	90%{
+		transform: rotate(0deg);
+		top: 879px;
+		left: 425px;
+	}
+
+	100%{
+		transform: rotate(0deg);
+		top: 139px;
+		left: 378px;
+	}}
+	@keyframes groove{
+	0%{
+		transform: rotate(0deg);
+		top: 589px;
+		left: 35px;
+	}
+
+	10%{
+		transform: rotate(10deg);
+		top: 789px;
+		left: 25px;
+	}
+
+	20%{
+		transform: rotate(25deg);
+		top: 678px;
+		left: 356px;
+	}
+
+	30%{
+		transform: rotate(10deg);
+		top: 567px;
+		left: 897px;
+	}
+
+	40%{
+		transform: rotate(0deg);
+		top: 234px;
+		left: 678px;
+	}
+
+	50%{
+		transform: rotate(0deg);
+		top: 432px;
+		left: 56px;
+	}
+
+	60%{
+		transform: rotate(0deg);
+		top: 178px;
+		left: 67px;
+	}
+
+	70%{
+		transform: rotate(0deg);
+		top: 678px;
+		left: 735px;
+	}
+
+	80%{
+		transform: rotate(0deg);
+		top: 245px;
+		left: 294px;
+	}
+
+	80%{
+		transform: rotate(0deg);
+		top: 838px;
+		left: 842px;
+	}
+
+	90%{
+		transform: rotate(0deg);
+		top: 521px;
+		left: 43px;
+	}
+
+	100%{
+		transform: rotate(0deg);
+		top: 153px;
+		left: 235px;
+	}}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.strokeText("Happy Spring!", 600, 50);
+		
+	function activatecherryblossom
+	(){
+	var cherryblossom = document.createElement('div')
+	document.body.appendChild(cherryblossom)
+	cherryblossom.classList.add("cherryblossoms")
+}
+
+activatecherryblossom()
+
+document.addEventListener("click", activatecherryblossom)
+
+var d = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.strokeText("Happy Spring!", 600, 50);
+		
+	function activateinvertedflowers
+	(){
+	var invertedflowers = document.createElement('div')
+	document.body.appendChild(invertedflowers)
+	invertedflowers.classList.add("invertedflowers")
+}
+
+activateinvertedflowers()
+setInterval(activateinvertedflowers,1350);
+	</script>
+
+</body>
+</html>
