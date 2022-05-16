@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			background-color:black;
+			color:white;
+			font-size:40px;
+		}
+		
+		#norway{
+			width:200px;
+			height:120px;
+			background-image:url(flag_of_norway.svg.png);
+			background-size:cover;
+
+		}
+
+			#usa{
+			width:200px;
+			height:120px;
+			margin-top:75px;
+			background-image:url(download.png);
+			background-size:cover;
+
+		}
+
+
+			#germany{
+			width:200px;
+			height:120px;
+			margin-top:60px;
+			background-image:url(germany.png);
+			background-size:cover;
+			margin: dotted;
+
+		}
+
+		#container1{
+		position: absolute;
+		left: 220px;
+		top: 30px;
+
+		}
+
+		#container2{
+		position: absolute;
+		left: 220px;
+		top: 227px;
+
+		}
+
+		#container3{
+		position: absolute;
+		left: 220px;
+		top: 405px;
+
+		}
+	</style>
+</head>
+<body>
+<center>The # of Gold/Silver/Bronze Medals Scored by Each Country in the Winter Olympics</center>
+	<div id="norway"></div>
+
+	<div id="container1"></div>
+	<div id="container2"></div>
+	<div id="container3"></div>
+	<div id="usa"></div>
+	<div id="germany"></div>
+
+<script type="text/javascript">
+		
+		function makeGold (x) {
+			var norway = document.createElement("div");
+			document.getElementById('container1').appendChild(norway);
+			norway.style.width= "8px";
+			norway.style.height="8px";
+			// norway.style.backgroundColor="gold";
+			norway.style.display="inline-block";
+			norway.style.margin="2px";
+			norway.classList.add("div");
+
+			if (x<133) {
+			norway.style.backgroundColor="gold";}
+
+			if (x>133 && x<258) {
+			norway.style.backgroundColor="silver";}
+
+			if (x>258) {
+			norway.style.backgroundColor="	#CD7F32";}
+
+
+		}
+
+
+			for(var i=1; i<369; i=i+1){
+				makeGold(i)
+			}
+
+
+
+
+			function makeSilver (x) {
+			var usa = document.createElement("div");
+			document.getElementById('container2').appendChild(usa);
+			usa.style.width= "8px";
+			usa.style.height="8px";
+
+			usa.style.backgroundSize="inline-block";
+			usa.style.display="inline-block";
+			usa.style.margin="2px";
+			usa.classList.add("div");
+
+			if (x<106) {
+			usa.style.backgroundColor="gold";}
+
+			if (x>106 && x<217) {
+			usa.style.backgroundColor="silver";}
+
+			if (x>217) {
+			usa.style.backgroundColor="	#CD7F32";}
+
+
+		}
+
+
+			for(var i=1; i<305; i=i+1){
+				makeSilver(i)
+			}
+
+			function makeBronze (x) {
+			var germany = document.createElement("div");
+			document.getElementById('container3').appendChild(germany);
+			germany.style.width="8px";
+			germany.style.height="8px";
+			germany.style.display="inline-block";
+			germany.style.margin="2px";
+			germany.classList.add("div");
+			
+			if (x<93) {
+			germany.style.backgroundColor="gold";}
+
+			if (x>93 && x<181) {
+			germany.style.backgroundColor="silver";}
+
+			if (x>181) {
+			germany.style.backgroundColor="#CD7F32";}
+
+
+		}
+
+
+			for(var i=1; i<241; i=i+1){
+				makeBronze(i)
+			}
+		
+	</script>
+
+</body>
+</html>
